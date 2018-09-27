@@ -55,10 +55,28 @@
                     <navigationItem key="navigationItem" id="jBY-RN-2Hz">
                         <barButtonItem key="rightBarButtonItem" title="秒数設定" id="r47-30-FXH"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="5pV-IJ-5hG" kind="show" id="Kz8-9T-ud2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="860" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zkz-ui-JZx">
+            <objects>
+                <viewController id="5pV-IJ-5hG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRw-Zc-DiF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cJR-pv-nZr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcb-gW-1tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N23-oY-BvH">
