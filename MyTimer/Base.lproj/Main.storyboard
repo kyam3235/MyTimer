@@ -70,7 +70,23 @@
                     <view key="view" contentMode="scaleToFill" id="gRw-Zc-DiF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RID-0E-CDt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYI-LB-LW0">
+                                <rect key="frame" x="127.5" y="373.5" width="120" height="120"/>
+                                <state key="normal" image="btn_ decision"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RID-0E-CDt" firstAttribute="leading" secondItem="cJR-pv-nZr" secondAttribute="leading" id="MNo-md-Eyl"/>
+                            <constraint firstItem="RID-0E-CDt" firstAttribute="top" secondItem="cJR-pv-nZr" secondAttribute="top" id="bcQ-6R-634"/>
+                            <constraint firstItem="RID-0E-CDt" firstAttribute="trailing" secondItem="cJR-pv-nZr" secondAttribute="trailing" id="hmb-et-uWj"/>
+                            <constraint firstItem="ZYI-LB-LW0" firstAttribute="centerY" secondItem="gRw-Zc-DiF" secondAttribute="centerY" constant="100" id="teC-J6-8nS"/>
+                            <constraint firstItem="ZYI-LB-LW0" firstAttribute="centerX" secondItem="gRw-Zc-DiF" secondAttribute="centerX" id="xts-Sh-iln"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cJR-pv-nZr"/>
                     </view>
                 </viewController>
@@ -99,6 +115,7 @@
     </scenes>
     <resources>
         <image name="bg" width="750" height="1334"/>
+        <image name="btn_ decision" width="120" height="120"/>
         <image name="btn_start" width="140" height="140"/>
         <image name="btn_stop" width="140" height="140"/>
     </resources>
