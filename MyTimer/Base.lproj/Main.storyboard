@@ -88,6 +88,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYI-LB-LW0">
                                 <rect key="frame" x="127.5" y="373.5" width="120" height="120"/>
                                 <state key="normal" image="btn_ decision"/>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="5pV-IJ-5hG" eventType="touchUpInside" id="uQs-ne-YZC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -100,6 +103,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cJR-pv-nZr"/>
                     </view>
+                    <connections>
+                        <outlet property="timerSettingPicker" destination="RID-0E-CDt" id="1wt-72-Hsw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcb-gW-1tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
