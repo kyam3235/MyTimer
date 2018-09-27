@@ -56,7 +56,7 @@
                         <barButtonItem key="rightBarButtonItem" title="秒数設定" id="r47-30-FXH"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="5pV-IJ-5hG" kind="show" id="Kz8-9T-ud2"/>
+                        <segue destination="5pV-IJ-5hG" kind="show" identifier="goSetting" id="Kz8-9T-ud2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
