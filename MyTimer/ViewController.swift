@@ -34,6 +34,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startButtonAction(_ sender: Any) {
+        //カウントダウンを開始
+        if let nowTimer = timer{
+            //もしタイマーが実行中だったらスタートしない
+            if nowTimer.isValid == true{
+                return
+            }
+        }
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0,
+                                     target: self,
+                                     selector: #selector(self.timerInterrupt(_:)),
+                                     userInfo: nil,
+                                     repeats: true)
     }
     
     @IBAction func stopButtonAction(_ sender: Any) {
