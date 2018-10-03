@@ -31,6 +31,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var countDownLabel: UILabel!
     
     @IBAction func settingButtonAction(_ sender: Any) {
+        if let nowTimer = timer{
+            if nowTimer.isValid == true{
+                nowTimer.invalidate()
+            }
+        }
+        //画面遷移を行う
+        performSegue(withIdentifier: "goSetting", sender: nil)
     }
     
     @IBAction func startButtonAction(_ sender: Any) {
