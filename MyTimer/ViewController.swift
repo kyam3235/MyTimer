@@ -93,5 +93,12 @@ class ViewController: UIViewController {
             timer.invalidate()
         }
     }
+    
+    //画面切り替えのタイミングで処理を行う
+    override func viewDidAppear(_ animated: Bool){
+        count = 0
+        //タイマー表示を更新する
+        _ = displayUpdate()
+    }
 }
 
