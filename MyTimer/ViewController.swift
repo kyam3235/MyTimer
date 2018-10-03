@@ -50,6 +50,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stopButtonAction(_ sender: Any) {
+        //タイマーを停止
+        if let nowTimer = timer{
+            //もしタイマーが実行中だったら停止
+            if nowTimer.isValid == true{
+                //タイマー停止
+                nowTimer.invalidate()
+            }
+        }
     }
     
     //画面の更新をする(戻り値:remainCount:残り時間)
