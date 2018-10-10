@@ -51,6 +51,8 @@ class SettingViewController: UIViewController, UIPickerViewDataSource,UIPickerVi
     @IBOutlet weak var timerSettingPicker: UIPickerView!
     
     @IBAction func decisionButtonAction(_ sender: Any) {
+        //前の画面に戻る
+        _ = navigationController?.popViewController(animated: true)
     }
     
     //UIPickerViewの列数を設定
