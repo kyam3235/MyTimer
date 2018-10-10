@@ -93,7 +93,10 @@ class ViewController: UIViewController {
             timer.invalidate()
             
             //ダイアログを作成
-            let alertController = UIAlertController(title: "終了", message: "タイマー終了時間です", preferredStyle: .alert)
+            //ポップアップダイアログ
+            //let alertController = UIAlertController(title: "終了", message: "タイマー終了時間です", preferredStyle: .alert)
+            //下からスライドして表示されるダイアログ
+            let alertController = UIAlertController(title: "終了", message: "タイマー終了時間です", preferredStyle: .actionSheet)
             //ダイアログに表示されるOKボタンを作成
             let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             //アクションを追加
