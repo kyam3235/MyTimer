@@ -68,4 +68,12 @@ class SettingViewController: UIViewController, UIPickerViewDataSource,UIPickerVi
         String?{
             return String(settingArray[row])
     }
+    
+    //Picker選択時に実行
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+        //UserDefaultの設定
+        let settings = UserDefaults.standard
+        settings.setValue(settingArray[row], forKey: settingKey)
+        settings.synchronize()
+    }
 }
