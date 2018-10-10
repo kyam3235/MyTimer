@@ -12,7 +12,7 @@ import UIKit
 let settingArray : [Int] = [10, 20, 30, 40, 50, 60]
 
 //設定値を覚えるキー
-let settingKey = "time_value"
+let settingKey = "timer_value"
 
 class SettingViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
 
